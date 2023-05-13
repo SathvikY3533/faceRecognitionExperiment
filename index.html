@@ -1,11 +1,22 @@
-<!DOCTYPE html>
-
-<html>
-    <label for="back">Front Camera</label>
-    <br>
-    <input type="file" id="back" capture="environment" accept="video/*">
-    <br>
-    <label for="front">Back Camera</label>
-    <br>
-    <input type="file" id="front" capture="user" accept="image/*">
+<html lang=”en”>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Name of your awesome camera app -->
+    <title>Camera App</title>
+    <!-- Link to your main style sheet-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Camera -->
+    <main id="camera">
+        <!-- Camera sensor -->
+        <canvas id="camera--sensor"></canvas>
+        <!-- Camera view -->
+        <video id="camera--view" autoplay playsinline></video>
+    </main>
+    <!-- Reference to your JavaScript file -->
+    <script src="script.js"></script>
+</body>
 </html>

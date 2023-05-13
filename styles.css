@@ -1,0 +1,16 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  #camera, #camera--view, #camera--sensor {
+      position: fixed;
+      height: 50%;
+      width: 50%;
+      object-fit: cover;
+  }
+  #camera--view, #camera--sensor {
+      transform: scaleX(-1);
+      filter: FlipH;
+  }
