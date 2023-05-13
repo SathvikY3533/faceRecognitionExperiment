@@ -10,12 +10,19 @@
 </head>
 <body>
     <!-- Camera -->
-    <main id="camera">
-        <!-- Camera sensor -->
-        <canvas id="camera--sensor"></canvas>
-        <!-- Camera view -->
-        <video id="camera--view" autoplay playsinline></video>
-    </main>
+    <div class="content">
+        <main id="camera">
+            <!-- Camera sensor -->
+            <canvas id="camera--sensor"></canvas>
+            <!-- Camera view -->
+            <video id="camera--view" autoplay playsinline></video>
+        </main>
+        <div class="pixelCount">
+            <span id="red">--- ------: </span><br>
+            <span id="green">----- ------: </span><br>
+            <span id="blue">---- ------: </span><br>
+        </div>
+    </div>
     <!-- Reference to your JavaScript file -->
     <script src="script.js"></script>
 </body>

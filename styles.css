@@ -1,16 +1,37 @@
 html, body{
-    margin: 0;
+    margin: 1%;
     padding: 0;
     height: 100%;
     width: 100%;
-  }
-  #camera, #camera--view, #camera--sensor {
-      position: fixed;
-      height: 50%;
-      width: 50%;
-      object-fit: cover;
-  }
-  #camera--view, #camera--sensor {
-      transform: scaleX(-1);
-      filter: FlipH;
-  }
+    font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
+}
+
+span {
+    font-size: 1.5vw;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.pixelCount {
+    height: 10vh;
+    padding-left: 1%;
+    padding-top: 1%;
+    border-radius: 25px;
+}
+
+#camera, #camera--view, #camera--sensor {
+    position: fixed;
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+    margin-top: 6vh;
+    border-radius: 25px;
+}
+#camera--view, #camera--sensor {
+    transform: scaleX(-1);
+    filter: FlipH;
+}
